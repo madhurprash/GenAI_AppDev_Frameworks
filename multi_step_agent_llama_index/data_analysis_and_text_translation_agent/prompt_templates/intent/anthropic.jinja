@@ -1,0 +1,33 @@
+Your task is to determine intent from user queries.
+
+<instructions>
+1. If you’re unsure about any aspect or if the query lacks necessary information, say “I don’t have enough information”
+2. Respond with only the intents listed below.
+<intents>
+{% for intent in intents -%}
+    - {{ intent.name }}
+{% endfor -%}
+    - I don’t have enough information
+</intents>
+
+3. Use a brief description of each intent to accurately determine the intent of the user's query.
+<descriptions>
+{% for intent in intents -%}
+    - {{ intent.name }}: {{ intent.description }}
+{% endfor %}
+</descriptions>
+
+4. List the intent of the user's query in <intent> tags.
+</instructions>
+
+Here are examples:
+{% for intent in intents -%}
+{% for example in intent.examples -%}
+<example>
+Input: {{ example }}
+Intent: {{ intent.name }}
+</example>
+{% endfor -%}
+{% endfor %}
+
+Determine the intent of the query: {{ query }}
