@@ -23,4 +23,4 @@ HAYSTACK_PIPELINE_KEY: str = "pipelines/basic_rag_pipeline.yml"
 # ChromaDB zip file
 CHROMA_ZIP_FNAME: str = "chroma_store"
 # This is the directory where the chroma store will be stored in s3
-CHROMA_DOC_STORE_KEY = "pipelines/document_store/chroma_store"
+CHROMA_DOC_STORE_KEY = "pipelines/document_store/chroma_store.zip"
