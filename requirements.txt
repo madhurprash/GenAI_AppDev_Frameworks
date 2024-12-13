@@ -1,3 +1,8 @@
+openinference-instrumentation-bedrock 
 sentence-transformers==3.3.1
 arize-phoenix-otel==0.6.1
-haystack==0.42
+amazon-bedrock-haystack
+langsmith==0.2.3
+langchain-core
+arize-phoenix
+haystack-ai
