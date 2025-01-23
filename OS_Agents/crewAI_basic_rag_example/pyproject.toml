@@ -1,0 +1,14 @@
+[project]
+name = "crewai-rag-example"
+version = "0.1.0"
+description = "CrewAI RAG Example"
+dependencies = [
+    "crewai",
+    "docling",
+    "langchain",
+    "requests"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
